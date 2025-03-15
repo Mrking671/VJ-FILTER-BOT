@@ -517,7 +517,7 @@ async def start(client, message):
             return await message.reply('<b><i>No such file exist.</b></i>')
         filesarr = []
         for file in files:
-            file_id = file["file_id"]
+            file_id = file["file_ref"]
             files_ = await get_file_details(file_id)
             files1 = files_
             title = ' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@'), files1["file_name"].split()))
