@@ -1366,7 +1366,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             typed = query.message.reply_to_message.from_user.id
         except:
             typed = query.from_user.id
-        ident, file_id = query.data.split("#")
+        ident, file_ref = query.data.split("#")
         files_ = await get_file_details(file_ref)
         if not files_:
             return await query.answer('Nᴏ sᴜᴄʜ ғɪʟᴇ ᴇxɪsᴛ.')
@@ -1390,7 +1390,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             if settings['is_shortlink'] and not await db.has_premium_access(query.from_user.id):
                 if clicked == typed:
                     temp.SHORT[clicked] = query.message.chat.id
-                    await query.answer(url=f"https://telegram.me/{temp.U_NAME}?start=short_{file_id}")
+                    await query.answer(url=f"https://telegram.me/{temp.U_NAME}?start=short_{file_ref}")
                     return
                 else:
                     await query.answer(f"Hᴇʏ {query.from_user.first_name}, Tʜɪs Is Nᴏᴛ Yᴏᴜʀ Mᴏᴠɪᴇ Rᴇǫᴜᴇsᴛ. Rᴇǫᴜᴇsᴛ Yᴏᴜʀ's !", show_alert=True)
