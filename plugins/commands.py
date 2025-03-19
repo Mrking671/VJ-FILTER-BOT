@@ -76,7 +76,7 @@ async def start(client, message):
         if CLONE_MODE == True:
             buttons.append([InlineKeyboardButton('🤖 Cʀᴇᴀᴛᴇ Yᴏᴜʀ Oᴡɴ Cʟᴏɴᴇ Bᴏᴛ 🤖', callback_data='clone')])
         reply_markup = InlineKeyboardMarkup(buttons)
-        m=await message.reply_sticker("CAACAgUAAxkBAAIPGGfJdZxlSSAsm5w2jzkaRk8o9rAlAAK-GgACCMlQVvEgKzcH7nu8HgQ") 
+        m=await message.reply_sticker("CAACAgUAAxkBAAJfomfa6BDshmXINT1TmnZxDG6yVZ9kAALIEwACCDTYVmk3kOXyyU6LHgQ") 
         await asyncio.sleep(1)
         await m.delete()
         await message.reply_photo(
@@ -219,7 +219,7 @@ async def start(client, message):
             if CLONE_MODE == True:
                 buttons.append([InlineKeyboardButton('🤖 Cʀᴇᴀᴛᴇ Yᴏᴜʀ Oᴡɴ Cʟᴏɴᴇ Bᴏᴛ 🤖', callback_data='clone')])
             reply_markup = InlineKeyboardMarkup(buttons)
-            m=await message.reply_sticker("CAACAgUAAxkBAAEKVaxlCWGs1Ri6ti45xliLiUeweCnu4AACBAADwSQxMYnlHW4Ls8gQMAQ") 
+            m=await message.reply_sticker("CAACAgUAAxkBAAJfomfa6BDshmXINT1TmnZxDG6yVZ9kAALIEwACCDTYVmk3kOXyyU6LHgQ") 
             await asyncio.sleep(1)
             await m.delete()
             await message.reply_photo(
@@ -1478,8 +1478,8 @@ async def check_plans_cmd(client, message):
             [InlineKeyboardButton("⚠️ ᴄʟᴏsᴇ / ᴅᴇʟᴇᴛᴇ ⚠️", callback_data="close_data")]
         ]
         reply_markup = InlineKeyboardMarkup(btn)
-        m=await message.reply_sticker("CAACAgIAAxkBAAIBTGVjQbHuhOiboQsDm35brLGyLQ28AAJ-GgACglXYSXgCrotQHjibHgQ")         
-        await message.reply_text(f"**😢 You Don't Have Any Premium Subscription.\n\n Check Out Our Premium /plan**",reply_markup=reply_markup)
+        m=await message.reply_sticker("CAACAgUAAxkBAAJfomfa6BDshmXINT1TmnZxDG6yVZ9kAALIEwACCDTYVmk3kOXyyU6LHgQ")         
+        await message.reply_text(f"**😢 You Don't Have Any Premium Subscription /plan**",reply_markup=reply_markup)
         await asyncio.sleep(2)
         await m.delete()
 
