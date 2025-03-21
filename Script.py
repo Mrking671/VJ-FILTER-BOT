@@ -5,7 +5,10 @@
 class script(object):
     START_TXT = """<b><blockquote>ʜᴇʟʟᴏ {}, ᴍʏ ɴᴀᴍᴇ <a href=https://t.me/{}>{}</a></blockquote>
     
-ᴛʏᴘᴇ ᴀɴʏ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ ᴀɴᴅ sᴇᴇ ᴍᴀɢɪᴄ,ɴᴀᴍᴇ sʜᴏᴜʟᴅ ʙᴇ ᴄᴏʀʀᴇᴄᴛ. ¶<ᴄʜᴇᴄᴋ ᴘʟᴀɴ✅>¶ - /myplan </b>"""
+ᴛʏᴘᴇ ᴀɴʏ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ ᴀɴᴅ sᴇᴇ ᴍᴀɢɪᴄ,ɴᴀᴍᴇ sʜᴏᴜʟᴅ ʙᴇ ᴄᴏʀʀᴇᴄᴛ.
+
+𝗠𝗬𝗣𝗟𝗔𝗡✅ - /myplan
+𝗕𝗨𝗬𝗣𝗟𝗔𝗡✅ - /plan.</b>"""
 
     CLONE_START_TXT = """<b><blockquote>ʜᴇʟʟᴏ {}, ᴍʏ ɴᴀᴍᴇ <a href=https://t.me/{}>{}</a></blockquote>
     
